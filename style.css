@@ -1,34 +1,34 @@
-
 /*-----Importanto font Roboto------*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /*------Reset--------*/
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
     font-family: 'Roboto', sans-serif;
-    vertical-align:baseline;
-    list-style:none;
+    vertical-align: baseline;
+    list-style: none;
 }
+
 /*-------------------------*/
 
 /*-----Cabeçalho navegação------*/
-header.container-navigation{
+header.container-navigation {
     width: 100%;
     height: 48px;
     position: fixed;
     background: #2571B7;
 }
 
-nav.navigation-mobile{
+nav.navigation-mobile {
     height: 100%;
     padding: 0px 18px;
 }
 
 /*------Botão de navegação--------*/
 
-.button-navigation{
+.button-navigation {
     height: 18px;
     display: flex;
     float: left;
@@ -37,7 +37,7 @@ nav.navigation-mobile{
     justify-content: space-between;
 }
 
-.button-icon{
+.button-icon {
     width: 24px;
     height: 2px;
     background: #FFFFFF;
@@ -46,7 +46,7 @@ nav.navigation-mobile{
 /*-------------------------*/
 
 /*--------Botão com nome----*/
-.button-name{
+.button-name {
     width: 113px;
     height: 28px;
     background-color: #002050;
@@ -55,7 +55,7 @@ nav.navigation-mobile{
     margin-top: 10px;
 }
 
-.button-name button{
+.button-name button {
     width: 100%;
     height: 100%;
     font-size: 14px;
@@ -63,55 +63,65 @@ nav.navigation-mobile{
     background-color: inherit;
 }
 
-.button-name button:hover{
+.button-name button:hover {
     background-color: #003f9e;
 }
+
 /*-------------------------*/
 
 /*-------------------------*/
 
 /*------Primeira seção---------*/
-section.section-one{
+section.section-one {
     width: 100%;
     height: 592px;
-    background: url(/img/Grupo\ 52.png) no-repeat 43% 100% scroll;
+    background: url(/img/Grupo\ 52.png) no-repeat 43% 80% scroll;
+    background-size: cover;
     text-align: center;
     color: #FFFFFF;
 }
 
-section.section-one h1{
+section.section-one h1 {
     padding-top: 120px;
-}
-section.section-one p{
-    padding-top: 24px ;
+    font-size: 42px;
+    font: normal normal 600 42px/56px Segoe UI;
 }
 
-section.section-one .button{
+section.section-one p {
+    padding-top: 24px;
+    font-size: 24px;
+    font: normal normal normal 24px/36px Segoe UI;
+}
+
+section.section-one .button {
     width: 189px;
     height: 52px;
     margin: 60px auto;
     background-color: #00A4EF;
 }
-section.section-one .button button{
+
+section.section-one .button button {
     width: 100%;
     height: 100%;
     font-size: 24px;
     background-color: inherit;
     color: #FFFFFF;
 }
-section.section-one .button button:hover{
+
+section.section-one .button button:hover {
     background-color: #6fcbf5;
 }
 
-section.section-one img{
+section.section-one img {
     width: 130.69px;
     height: 39.37px;
-    margin-top: 127.96px;
+    margin-top: 90.96px;
 }
+
 /*-------------------------*/
 
 /*----Seção sobre--------*/
-section.section-about{
+section.section-about {
     width: 324px;
     height: 182px;
     margin-top: 60px;
@@ -120,8 +130,89 @@ section.section-about{
     text-align: center;
 }
 
-section.section-about p{
+section.section-about p {
     font: normal normal normal 15px/24px Segoe UI;
     color: #737373;
 }
+
 /*-------------------------*/
+
+/*-----Seção de artigos-------*/
+
+section.section-articles {
+    width: 324px;
+    margin-top: 33px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.section-articles h2 {
+    color: #2571B7;
+    font-size: 24px;
+}
+
+section.section-articles>p {
+    margin-top: 27px;
+    color: #737373;
+    font: normal normal normal 15px/24px Segoe UI;
+}
+
+/*-----Configuração padrão dos artigos-------*/
+section article[class*="article-"] {
+    width: 100%;
+    height: 124px;
+    color: white;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 18px;
+    box-sizing: border-box;
+    margin-top: 15px;
+}
+
+article[class*="article-"] div.left img {
+    margin-right: 10px;
+}
+
+article[class*="article-"] div.right p {
+    font-size: 12px;
+}
+
+article[class*="article-"] div.right h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/*-----Configuração de cada artigo-------*/
+article.article-1 {
+    margin-top: 27px;
+    background-color: #0072C6;
+}
+
+article.article-2 {
+    background-color: #2C5898;
+}
+
+article.article-3 {
+    background-color: #207245;
+}
+
+article.article-4 {
+    background-color: #CB4A32;
+}
+
+article.article-5 {
+    background-color: #733781;
+}
+
+article.article-5 {
+    background-color: #00AFF0;
+}
+
+/*-----------------------*/
