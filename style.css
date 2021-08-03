@@ -109,3 +109,19 @@ section.section-one img{
     margin-top: 127.96px;
 }
 /*-------------------------*/
+
+/*----Seção sobre--------*/
+section.section-about{
+    width: 324px;
+    height: 182px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+section.section-about p{
+    font: normal normal normal 15px/24px Segoe UI;
+    color: #737373;
+}
+/*-------------------------*/
