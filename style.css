@@ -270,6 +270,11 @@ button#button-option1 {
     color: #7FBA00;
 }
 
+button#button-option1:hover {
+    background-color: #7FBA00;
+    color: white;
+}
+
 h4#title-option2 {
     color: #00A4EF;
 }
@@ -279,6 +284,11 @@ button#button-option2 {
     color: #00A4EF;
 }
 
+button#button-option2:hover {
+    background-color: #00A4EF;
+    color: white;
+}
+
 h4#title-option3 {
     color: #FFB900;
 }
@@ -286,6 +296,11 @@ h4#title-option3 {
 button#button-option3 {
     border: 1px solid #FFB900;
     color: #FFB900;
+}
+
+button#button-option3:hover {
+    background-color: #FFB900;
+    color: white;
 }
 
 /*------------------*/
