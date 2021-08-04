@@ -356,3 +356,23 @@ article.article-dolor p{
 }
 
 /*--------------------*/
+
+/*-------Seção img-------*/
+
+section.section-img{
+    width: 100%;
+    height: 224px;
+    background: url(img/Grupo89.png) 0% 0% no-repeat padding-box;
+    margin-top: 60px;
+    padding: 42px 18px;
+    color: #FFFFFF;
+}
+
+section.section-img p{
+    width: 324px;
+    height: 140px;
+    text-align: center;
+    font: normal normal normal 24px/36px Segoe UI;
+}
+
+/*---------------------*/
