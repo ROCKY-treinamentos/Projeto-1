@@ -445,3 +445,32 @@ section.section-form form button:hover{
 }
 
 /*-----------------*/
+
+/*------Rodapé------*/
+footer.footer{
+    width: 100%;
+    height: 100%;
+    margin-top: 46px;
+    padding: 24px 0px;
+    text-align: center;
+    background-color: #E6E6E6;
+}
+
+footer.footer div{
+    width: 324px;
+    height: 100%;
+    margin-bottom: 17px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer.footer div img{
+    width: 40%;
+    margin: 0px 10px;
+}
+
+footer.footer p{
+    margin-top: 17px;
+    font-size: 12px;
+    color: #B4B4B4;
+}
