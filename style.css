@@ -13,6 +13,10 @@
 
 /*-------------------------*/
 
+.navigation-desktop{
+    display: none;
+}
+
 section{
     width: 90vw;
     margin: auto 5vh;
@@ -479,3 +483,50 @@ footer.footer p{
     font-size: 12px;
     color: #B4B4B4;
 }
+
+/*-----------------*/
+
+/*-----@media para desktop------*/
+
+@media screen and (min-width: 820px){
+    
+    /*-----Barra de navegação-------*/ 
+    header.container-navigation{
+        height: 80px;
+    }
+    nav.navigation-mobile{
+        display: none;
+    }
+
+    nav.navigation-desktop {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav.navigation-desktop img{
+        width:150px ;
+    }
+
+    nav.navigation-desktop ul li{
+        display: inline;
+        color: white;
+        margin-right: 30px;
+        font-size: 16pz;
+    }
+
+    nav.navigation-desktop div.menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    div.button-name {
+        width: 138px;
+        height: 37px;
+        margin-left: 41px;
+    }
+}
+    
