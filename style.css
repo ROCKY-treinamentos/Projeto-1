@@ -331,6 +331,8 @@ button#button-option3:hover {
 section.section-dolor {
     text-align: center;
     margin-top: 60px;
+    display: grid;
+    grid-template-columns: 100%;
 }
 
 section.section-dolor h3 {
@@ -341,22 +343,19 @@ section.section-dolor h3 {
     margin-bottom: 33px;
 }
 
-table,
-tr,
-td {
-    width: 100%;
-    height: 150px;
-    border: 3px solid #DEDEDE;
-    border-collapse: collapse;
-}
-
 section.section-dolor article.article-dolor {
     height: 100%;
     margin-top: 0px;
-    padding: 30px 24px;
+    padding: 30px 20px;
+    border: 3px solid #DEDEDE;
+    border-bottom: 0px;
     text-align: center;
     display: flex;
     flex-direction: column;
+}
+
+section.section-dolor article.article-dolor:last-child{
+    border: 3px solid #DEDEDE;
 }
 
 article.article-dolor h4 {
@@ -366,7 +365,6 @@ article.article-dolor h4 {
 
 article.article-dolor p {
     width: 100%;
-    height: 52px;
     margin-top: 18px;
     color: #868686;
     font: normal normal normal 12px/18px Roboto;
@@ -638,4 +636,18 @@ footer.footer p {
         order: 2;
     }
 
+    /*------Seção dolor------*/
+
+    section.section-dolor h3{
+        grid-column: 1 / 10;
+    }
+    section.section-dolor{
+        grid-template-rows: 30% 70%;
+        grid-template-columns: 20% 20% 20% 20%;
+    }
+    section.section-dolor article.article-dolor{
+        width: 100%;
+        border: 3px solid #DEDEDE;
+        border-right: 0px;
+    }
 }
