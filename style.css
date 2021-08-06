@@ -13,20 +13,20 @@
 
 /*-------------------------*/
 
-.navigation-desktop{
+.navigation-desktop {
     display: none;
 }
 
-section.section-one img[alt="arrow"]{
+section.section-one img[alt="arrow"] {
     display: none;
 }
 
-section{
+section {
     width: 90vw;
     margin: auto 5vh;
 }
 
-.flex-container{
+.flex-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -94,7 +94,7 @@ section {
 
 /*------Primeira seção---------*/
 section.section-one {
-    width:100%;
+    width: 100%;
     height: 100%;
     background: url(/img/Grupo\ 52.png) no-repeat 43% 80% scroll;
     background-size: cover;
@@ -195,7 +195,7 @@ section article[class*="article-"] {
 }
 
 article[class*="article-"] div.left img {
-    margin:auto 4vw auto 1vw;
+    margin: auto 4vw auto 1vw;
 }
 
 article[class*="article-"] div.right p {
@@ -243,6 +243,7 @@ section.section-option {
 }
 
 section.section-option h2 {
+    width: 100%;
     margin-bottom: 27px;
     color: #2571B7;
 }
@@ -271,7 +272,7 @@ article.article-option div.left button {
     margin-top: 18px;
 }
 
-article.article-option div.right img{
+article.article-option div.right img {
     width: 14vh;
 }
 
@@ -448,23 +449,23 @@ section.section-form form input:first-of-type:hover {
     border: 4px solid #2571B7;
 }
 
-section.section-form form button{
+section.section-form form button {
     width: 100%;
     height: 52px;
     background-color: #00A4EF;
     margin: 15px auto 2px auto;
-    color:white;
+    color: white;
     font-size: 21px;
 }
 
-section.section-form form button:hover{
+section.section-form form button:hover {
     background-color: #69caf7;
 }
 
 /*-----------------*/
 
 /*------Rodapé------*/
-footer.footer{
+footer.footer {
     width: 100%;
     height: 100%;
     margin-top: 46px;
@@ -473,19 +474,19 @@ footer.footer{
     background-color: #E6E6E6;
 }
 
-footer.footer div{
-    margin:auto auto 17px auto;
+footer.footer div {
+    margin: auto auto 17px auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-footer.footer div img{
+footer.footer div img {
     width: 25vh;
     margin: 0px 10px;
 }
 
-footer.footer p{
+footer.footer p {
     margin-top: 17px;
     font-size: 12px;
     color: #B4B4B4;
@@ -495,13 +496,14 @@ footer.footer p{
 
 /*-----@media para desktop------*/
 
-@media screen and (min-width: 1134px){
-    
-    /*-----Barra de navegação-------*/ 
-    header.container-navigation{
+@media screen and (min-width: 1134px) {
+
+    /*-----Barra de navegação-------*/
+    header.container-navigation {
         height: 80px;
     }
-    nav.navigation-mobile{
+
+    nav.navigation-mobile {
         display: none;
     }
 
@@ -513,18 +515,18 @@ footer.footer p{
         align-items: center;
     }
 
-    nav.navigation-desktop img{
-        width:150px ;
+    nav.navigation-desktop img {
+        width: 150px;
     }
 
-    nav.navigation-desktop ul li{
+    nav.navigation-desktop ul li {
         display: inline;
         color: white;
         margin-right: 30px;
         font-size: 16pz;
     }
 
-    nav.navigation-desktop div.menu{
+    nav.navigation-desktop div.menu {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
@@ -535,10 +537,11 @@ footer.footer p{
         height: 37px;
         margin-left: 41px;
     }
-    /*-----Barra de navegação-------*/ 
 
-    /*-----Seção 1-------*/ 
-    section.section-one{
+    /*-----Barra de navegação-------*/
+
+    /*-----Seção 1-------*/
+    section.section-one {
         width: 100%;
         height: 820px;
         text-align: left;
@@ -547,54 +550,92 @@ footer.footer p{
         padding-right: 200px;
         box-sizing: border-box;
     }
-    section.section-one h1{
+
+    section.section-one h1 {
 
         font: normal normal 600 80px/106px Roboto;
     }
 
-    section.section-one p{
+    section.section-one p {
         font: normal normal normal 32px/43px Roboto;
     }
 
-    section.section-one div.button{
+    section.section-one div.button {
         margin: 96px 0px 0px 0px;
     }
 
-    section.section-one img[alt="arrow"]{
+    section.section-one img[alt="arrow"] {
         display: inline;
         padding: 0px;
         float: left;
-        position:none;
+        position: none;
     }
 
-    section.section-one img{
+    section.section-one img {
         float: right;
         width: auto;
         height: 40px;
         margin-top: 90px;
     }
+
     /*--------------------*/
 
     /*-------Seção sobre-------*/
 
-    section.section-about span:first-child{
+    section.section-about span:first-child {
         font-weight: bold;
         color: red;
     }
 
-     /*-----------------*/
+    /*-----------------*/
 
     /*-----Seção artigos--------*/
 
-    section.section-article{
+    section.section-article {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
-    section article[class*="article-"]{
+
+    section article[class*="article-"] {
         width: 47%;
     }
 
-    
+    /*------Seção opções------*/
+
+    section.section-option {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    section.section-option article.article-option {
+        width: 30%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    article.article-option div.right {
+        order: 1;
+    }
+
+    article.article-option div.left {
+        order: 3;
+    }
+
+    article.article-option div.left p{
+        margin: 0px;
+    }
+
+    span.row {
+        display: none;
+    }
+
+    article.article-option span#row-desktop {
+        width: inherit;
+        height: 3px;
+        margin: 21px auto;
+        background-color: #DEDEDE;
+        order: 2;
+    }
+
 }
-    
