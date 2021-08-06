@@ -162,15 +162,18 @@ section.section-articles {
     margin: 33px auto auto auto;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 section.section-articles h2 {
+    width: 100%;
     color: #2571B7;
     font-size: 24px;
 }
 
 section.section-articles>p {
+    width: 100%;
     margin-top: 27px;
     color: #737373;
     font: normal normal normal 15px/24px;
@@ -188,7 +191,7 @@ section article[class*="article-"] {
     align-items: center;
     padding: 0px 18px;
     box-sizing: border-box;
-    margin-top: 15px;
+    margin: 10px auto auto auto;
 }
 
 article[class*="article-"] div.left img {
@@ -571,5 +574,27 @@ footer.footer p{
         margin-top: 90px;
     }
     /*--------------------*/
+
+    /*-------Seção sobre-------*/
+
+    section.section-about span:first-child{
+        font-weight: bold;
+        color: red;
+    }
+
+     /*-----------------*/
+
+    /*-----Seção artigos--------*/
+
+    section.section-article{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    section article[class*="article-"]{
+        width: 47%;
+    }
+
+    
 }
     
