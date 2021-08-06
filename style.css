@@ -381,7 +381,7 @@ section.section-img {
     background-size: cover;
     box-sizing: border-box;
     margin-top: 60px;
-    padding: 42px 2vh;
+    padding: 10vh 2vh;
     color: #FFFFFF;
     text-align: center;
 }
@@ -649,5 +649,12 @@ footer.footer p {
         width: 100%;
         border: 3px solid #DEDEDE;
         border-right: 0px;
+    }
+
+    /*------Seção image------*/
+    section.section-img {
+        padding: 12vh 15vw;
+        background: url(img/Grupo138.png) 0% 0% no-repeat padding-box;
+        background-size: cover;
     }
 }
