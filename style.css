@@ -13,6 +13,9 @@
 
 /*-------------------------*/
 
+section.section-articles article[class*="desktop"]{
+    display: none;
+}
 .navigation-desktop {
     display: none;
 }
@@ -97,25 +100,26 @@ section.section-one {
     width: 100%;
     height: 100%;
     background: url(/img/Grupo\ 52.png) no-repeat 43% 80% scroll;
-    background-size: cover;
+    background-size:cover;
     text-align: center;
     color: #FFFFFF;
 }
 
 section.section-one h1 {
     padding-top: 120px;
-    font: normal normal 600 42px/56px;
+    font: normal normal 600 42px/56px Roboto;
 }
 
 section.section-one p {
     padding-top: 24px;
+    margin: auto 10vh;
     font: normal normal normal 24px/36px Roboto;
 }
 
 section.section-one .button {
     width: 189px;
     height: 52px;
-    margin: 60px auto;
+    margin: 60px auto auto auto;
     background-color: #00A4EF;
 }
 
@@ -132,9 +136,11 @@ section.section-one .button button:hover {
 }
 
 section.section-one img {
-    width: 130px;
-    height: 40px;
-    margin-top: 90px;
+    width: 140px;
+    height: 100%;
+    margin-top: 127px;
+    margin-bottom: 20px;
+
 }
 
 /*-------------------------*/
@@ -143,7 +149,7 @@ section.section-one img {
 section.section-about {
     width: 90vw;
     height: 100%;
-    margin: 60px auto auto auto;
+    margin: 10vh auto auto auto;
     text-align: center;
 }
 
@@ -159,7 +165,7 @@ section.section-about p {
 section.section-articles {
     width: 90vw;
     height: 100%;
-    margin: 33px auto auto auto;
+    margin: 6vh auto auto auto;
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -174,9 +180,9 @@ section.section-articles h2 {
 
 section.section-articles>p {
     width: 100%;
-    margin-top: 27px;
+    margin: 4vh auto 3vh auto;
     color: #737373;
-    font: normal normal normal 15px/24px;
+    font: normal normal normal 15px/24px Roboto;
 }
 
 /*-----Configuração padrão dos artigos-------*/
@@ -195,6 +201,7 @@ section article[class*="article-"] {
 }
 
 article[class*="article-"] div.left img {
+    width: 9vh;
     margin: auto 4vw auto 1vw;
 }
 
@@ -209,7 +216,6 @@ article[class*="article-"] div.right h3 {
 
 /*-----Configuração de cada artigo-------*/
 article.article-1 {
-    margin-top: 27px;
     background-color: #0072C6;
 }
 
@@ -236,7 +242,7 @@ article.article-6 {
 /*-----------------------*/
 
 section.section-option {
-    margin-top: 60px;
+    margin-top: 8vh;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -244,7 +250,7 @@ section.section-option {
 
 section.section-option h2 {
     width: 100%;
-    margin-bottom: 27px;
+    margin-bottom: 6vh;
     color: #2571B7;
 }
 
@@ -273,7 +279,7 @@ article.article-option div.left button {
 }
 
 article.article-option div.right img {
-    width: 14vh;
+    width: 14vw;
 }
 
 span.row {
@@ -330,7 +336,7 @@ button#button-option3:hover {
 /*-----Seção dolar-------*/
 section.section-dolor {
     text-align: center;
-    margin-top: 60px;
+    margin-top: 8vh;
     display: grid;
     grid-template-columns: 100%;
 }
@@ -339,8 +345,7 @@ section.section-dolor h3 {
     font-size: 24px;
     color: #2571B7;
     width: 100%;
-    height: 68px;
-    margin-bottom: 33px;
+    margin-bottom: 6vh;
 }
 
 section.section-dolor article.article-dolor {
@@ -376,7 +381,7 @@ article.article-dolor p {
 
 section.section-img {
     width: 100%;
-    height: 224px;
+    height: 100%;
     background: url(img/Grupo89.png) 0% 0% no-repeat scroll;
     background-size: cover;
     box-sizing: border-box;
@@ -397,7 +402,7 @@ section.section-img p {
 /*---Seção formulario-------*/
 
 section.section-form {
-    margin-top: 60px;
+    margin-top: 8vh;
     text-align: center;
     color: #737373;
 }
@@ -407,8 +412,8 @@ section.section-form p {
 }
 
 section.section-form form {
-    width: 90vw;
-    margin: 27px auto auto auto;
+    width: 65vh;
+    margin: 6vh auto auto auto;
     background-color: #E6E6E6;
     text-align: left;
     padding: 15px 18px;
@@ -469,7 +474,7 @@ footer.footer {
     margin-top: 46px;
     padding: 24px 0px;
     text-align: center;
-    background-color: #E6E6E6;
+    background-color: #FFFFFF;
 }
 
 footer.footer div {
@@ -494,7 +499,7 @@ footer.footer p {
 
 /*-----@media para desktop------*/
 
-@media screen and (min-width: 1134px) {
+@media screen and (min-width: 840px) {
 
     /*-----Barra de navegação-------*/
     header.container-navigation {
@@ -521,7 +526,7 @@ footer.footer p {
         display: inline;
         color: white;
         margin-right: 30px;
-        font-size: 16pz;
+        font-size: 16px;
     }
 
     nav.navigation-desktop div.menu {
@@ -541,25 +546,26 @@ footer.footer p {
     /*-----Seção 1-------*/
     section.section-one {
         width: 100%;
-        height: 820px;
+        height: 100vh;
         text-align: left;
         padding-left: 120px;
-        padding-top: 200px;
-        padding-right: 200px;
+        padding-top: 20vh;
+        padding-right: 120px;
         box-sizing: border-box;
     }
 
     section.section-one h1 {
-
         font: normal normal 600 80px/106px Roboto;
     }
 
     section.section-one p {
+        position:static;
+        margin: 0px;
         font: normal normal normal 32px/43px Roboto;
     }
 
     section.section-one div.button {
-        margin: 96px 0px 0px 0px;
+        margin: 12vh 0px 0px 0px;
     }
 
     section.section-one img[alt="arrow"] {
@@ -573,7 +579,7 @@ footer.footer p {
         float: right;
         width: auto;
         height: 40px;
-        margin-top: 90px;
+        margin-top: 12vh;
     }
 
     /*--------------------*/
@@ -597,6 +603,26 @@ footer.footer p {
 
     section article[class*="article-"] {
         width: 47%;
+    }
+
+    section.section-articles article[class*="article-desktop"]{
+        display: flex;
+    }
+
+    .article-desktop-1{
+        background-color: #094AB2;
+    }
+
+    .article-desktop-2{
+        background-color: #0073C6;
+    }
+
+    .article-desktop-3{
+        background-color: #0093BE;
+    }
+
+    .article-desktop-4{
+        background-color: #5558AF;
     }
 
     /*------Seção opções------*/
@@ -638,12 +664,16 @@ footer.footer p {
 
     /*------Seção dolor------*/
 
+    #display-none{
+        display: none;
+    }
+
     section.section-dolor h3{
         grid-column: 1 / 10;
     }
     section.section-dolor{
         grid-template-rows: 30% 70%;
-        grid-template-columns: 20% 20% 20% 20%;
+        grid-template-columns: 25% 25% 25% 25%;
     }
     section.section-dolor article.article-dolor{
         width: 100%;
@@ -653,8 +683,9 @@ footer.footer p {
 
     /*------Seção image------*/
     section.section-img {
+        width: 100%;
         padding: 12vh 15vw;
-        background: url(img/Grupo138.png) 0% 0% no-repeat padding-box;
+        background: url(img/Grupo138.png) 0% 0% no-repeat scroll;
         background-size: cover;
     }
 }
