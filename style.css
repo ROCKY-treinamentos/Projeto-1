@@ -13,14 +13,7 @@
 
 /*-------------------------*/
 
-section.section-articles article[class*="desktop"]{
-    display: none;
-}
-.navigation-desktop {
-    display: none;
-}
-
-section.section-one img[alt="arrow"] {
+section.section-articles article[class*="desktop"], .display-none, .navigation-desktop{
     display: none;
 }
 
@@ -111,7 +104,7 @@ section.section-one h1 {
 }
 
 section.section-one p {
-    padding-top: 24px;
+    padding-top: 4vh;
     margin: auto 10vh;
     font: normal normal normal 24px/36px Roboto;
 }
@@ -197,12 +190,12 @@ section article[class*="article-"] {
     align-items: center;
     padding: 0px 18px;
     box-sizing: border-box;
-    margin: 10px auto auto auto;
+    margin: 2vh auto auto auto;
 }
 
 article[class*="article-"] div.left img {
     width: 9vh;
-    margin: auto 4vw auto 1vw;
+    margin: auto 2vw auto 1vw;
 }
 
 article[class*="article-"] div.right p {
@@ -394,7 +387,7 @@ section.section-img {
 section.section-img p {
     width: 100%;
     text-align: center;
-    font: normal normal normal 24px/36px Segoe UI;
+    font: normal normal normal 24px/36px Roboto;
 }
 
 /*---------------------*/
@@ -412,7 +405,7 @@ section.section-form p {
 }
 
 section.section-form form {
-    width: 65vh;
+    width: 90vw;
     margin: 6vh auto auto auto;
     background-color: #E6E6E6;
     text-align: left;
@@ -485,8 +478,8 @@ footer.footer div {
 }
 
 footer.footer div img {
-    width: 25vh;
-    margin: 0px 10px;
+    width: 140px;
+    margin: 0px 2vw;
 }
 
 footer.footer p {
@@ -529,6 +522,10 @@ footer.footer p {
         font-size: 16px;
     }
 
+    nav.navigation-desktop ul li:hover{
+        color:#78b4ec
+    }
+
     nav.navigation-desktop div.menu {
         display: flex;
         justify-content: space-between;
@@ -549,30 +546,36 @@ footer.footer p {
         height: 100vh;
         text-align: left;
         padding-left: 120px;
-        padding-top: 20vh;
+        padding-top: 10vh;
         padding-right: 120px;
         box-sizing: border-box;
     }
 
     section.section-one h1 {
+        padding-top: 20vh;
         font: normal normal 600 80px/106px Roboto;
     }
 
     section.section-one p {
-        position:static;
+        padding-top: 6vh;
         margin: 0px;
-        font: normal normal normal 32px/43px Roboto;
+        font: normal normal normal 30px/43px Roboto;
     }
 
     section.section-one div.button {
-        margin: 12vh 0px 0px 0px;
+        width: 266px;
+        height: 67px;
+        margin: 8vh 0px 0px 0px;
+    }
+
+    section.section-one div.button button{
+        font-size: 28px;
     }
 
     section.section-one img[alt="arrow"] {
         display: inline;
         padding: 0px;
         float: left;
-        position: none;
     }
 
     section.section-one img {
@@ -591,18 +594,38 @@ footer.footer p {
         color: red;
     }
 
+    section.section-about p{
+        font-size: 20px;
+    }
+
     /*-----------------*/
 
     /*-----Seção artigos--------*/
 
-    section.section-article {
+    section.section-articles {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
 
+    section.section-articles h2{
+        font-size: 40px;
+    }
+
+    section.section-articles p{
+        font-size: 20px;
+    }
+
     section article[class*="article-"] {
         width: 47%;
+    }
+
+    section article[class*="article-"] div.right p{
+        font: normal normal normal 14px/20px Roboto;
+    }
+
+    section article[class*="article-"] div.right h3{
+        font-size:20px;
     }
 
     section.section-articles article[class*="article-desktop"]{
@@ -632,10 +655,18 @@ footer.footer p {
         flex-wrap: wrap;
     }
 
+    section.section-option h2{
+        font-size: 40px;
+    }
+
     section.section-option article.article-option {
         width: 30%;
         flex-direction: column;
         text-align: center;
+    }
+
+    article.article-option div.right img {
+        width: 10.5vw;
     }
 
     article.article-option div.right {
@@ -643,10 +674,22 @@ footer.footer p {
     }
 
     article.article-option div.left {
+        margin-top: 1vw;
         order: 3;
     }
 
+    article.article-option div.left h4{
+        font-size: 20px;
+    }
+
+    article.article-option div.left button{
+        width: 114px;
+        height: 41px;
+        font-size: 14px;
+    }
+
     article.article-option div.left p{
+        font: normal normal normal 16px/24px Roboto;
         margin: 0px;
     }
 
@@ -654,12 +697,12 @@ footer.footer p {
         display: none;
     }
 
-    article.article-option span#row-desktop {
-        width: inherit;
+    article.article-option div.left span#row-desktop {
+        width: 5vw;
         height: 3px;
         margin: 21px auto;
         background-color: #DEDEDE;
-        order: 2;
+        display: flex;
     }
 
     /*------Seção dolor------*/
@@ -670,6 +713,7 @@ footer.footer p {
 
     section.section-dolor h3{
         grid-column: 1 / 10;
+        font-size: 40px;
     }
     section.section-dolor{
         grid-template-rows: 30% 70%;
@@ -681,11 +725,44 @@ footer.footer p {
         border-right: 0px;
     }
 
+    section.section-dolor article.article-dolor h4{
+        font-size: 20px;
+    }
+
+    section.section-dolor article.article-dolor p{
+        font: normal normal normal 16px/24px Roboto;
+    }
+
     /*------Seção image------*/
     section.section-img {
         width: 100%;
-        padding: 12vh 15vw;
+        padding: 10vh 14vw;
         background: url(img/Grupo138.png) 0% 0% no-repeat scroll;
         background-size: cover;
+    }
+
+    section.section-img p{
+        font: normal normal normal 40px/64px Roboto;
+    }
+
+    section.section-form p{
+        font-size: 20px;
+    }
+
+    section.section-form form{
+        width: 600px;
+    }
+
+    section.section-form form input{
+        height: 56px;
+    }
+
+    section.section-form form label{
+        font-size: 14px;
+    }
+
+    section.section-form form button{
+        height: 67px;
+        font-size: 28px;
     }
 }
